@@ -1,75 +1,145 @@
-*{
-font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
-font-size: 10 ;
-font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h2 {
-    text-align: center;
+
+html{
+    width: 100%;
+    height: 100vh;
+    font-size: 62.5%;
+    color: black;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    text-align: justify;
+    background: url(/src/background.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-position-y: 0px ;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    
+}
+
+.conteudo_menu {
+    text-transform: uppercase;
+    color: #5a535e;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .logo {
+    position: static;
+    padding-top: 5.8rem;
+    height: 16rem;
+    width: 19rem;
+    cursor:pointer;
+}
+
+.conteudo_menu .lista_menu {
     display: flex;
-    position: absolute;
-    float: left;
-    width:100px;
-}
-
-.menu {
-    margin: 10px;
-    padding: 10px;
     list-style: none;
+    gap: 10px;
 }
 
-nav {
-    background-color: #333;
-    text-align: right;
-}
-
-ul {
-    display: inline-block;
-}
-
-li {
-    display: inline;
-    margin-right: 30px;
-}
-
-a {
+.conteudo_menu .lista_menu a {
     text-decoration: none;
-    color:white;
-    font-weight: bold;
+    color: #5a535e;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.conteudo_menu .lista_menu a:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(42, 20, 119) ;
+    transition: all 1.5s ease;
+    
+}
+
+.conteudo_menu .lista_menu a:hover:before {
+  width: 100%;
+}
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo{
     display: flex;
-    position: relative;
-    text-align:left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.text_01  { 
+    margin-top: 2rem;
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color:#2a1477;
+}
+
+h3 {
+    height: 35px;
+    font-size: 2rem;
+    margin-left: 340px;
+    
+}
+
+.text_02 {
+    padding: 10px;
+    margin-right: 500px;
+    margin-left: 150px;
+    text-align:justify;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #5a535e;
+    text-transform: uppercase;
+    border: 2px solid #fcdad0;
+}
 
 .img_lateral {
     display: flex;
-    justify-content: center;
-    float: right;
     position: absolute;
-    top: 60%;
-    right: 0;
-    margin: 80px;
-    width: max-content;
-    border-image: auto;
-    border: 2px, solid #000;
-
-
+    float: right;
+    padding: 30px;
+    right: 18px;
+    top: 275px;
+    border:4px solid #fcdad0;
 
 }
 
-.rodape { 
- 
+.rodape {
+    color: #5a535e;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: #5a535e  0.1em 0.1em 0.1em;
+    height: 1px;
+    padding: 2px;
+    margin-left:5px;
+    
 }
-
